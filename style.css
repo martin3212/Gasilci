@@ -1,0 +1,155 @@
+.main{
+    background-color: white;
+    width:30%;
+    height:1200px;
+    margin: auto;
+    margin-top:30px;
+    border-radius:10px;  
+}
+.zgoraj{
+    background-color:white ;
+    width:90%;
+    height:15%;
+    border-bottom:solid 2px; 
+    margin: 0 auto;
+}
+.sredina{
+    background-color:WHITE;
+    width:100%;
+    height:80%;
+    border-radius:10px ; 
+}
+body{
+    background-color: gray;
+}
+p{
+    padding-top:20px;
+}
+.prijava{
+    border: solid 2px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width:90%;
+    margin: 0 auto;
+}
+.prijava2{
+    border: solid 2px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    width:90%;
+    margin: 0 auto;
+}
+.leva{
+    float:left;
+}
+.desna{
+    float:right;
+}
+.polje{
+    width:90%;
+    height:5%;
+    padding:20px;
+}
+.prijava3{
+    margin-top: 5px;
+    padding-bottom: 10px;
+    width:90%;
+    margin: 0 auto;
+}
+.grp{
+    float:right;
+    width:30%;
+    height:80%;
+}
+.podatki{
+    width:70%;
+    height:15%;
+}
+ul{
+    list-style-type: circle;
+}
+h5{
+    text-align: center;
+}
+.pogoji{
+    background-color:white ;
+    width:90%;
+    height:30%;
+    margin: 0 auto;
+}
+.besedilo{
+    padding:5px;
+}
+.reg {
+    background-color:  #FFC300 ; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.spodaj{
+    width:90%;
+    height:5%;
+    margin: 0 auto;
+}
+.s{
+    text-align: center;
+}
+iziToast.show({
+    id: null, 
+    class: '',
+    title: '',
+    titleColor: '',
+    titleSize: '',
+    titleLineHeight: '',
+    message: '',
+    messageColor: '',
+    messageSize: '',
+    messageLineHeight: '',
+    backgroundColor: '',
+    theme: 'light', // dark
+    color: '', // blue, red, green, yellow
+    icon: '',
+    iconText: '',
+    iconColor: '',
+    iconUrl: null,
+    image: '',
+    imageWidth: 50,
+    maxWidth: null,
+    zindex: null,
+    layout: 1,
+    balloon: false,
+    close: true,
+    closeOnEscape: false,
+    closeOnClick: false,
+    displayMode: 0, // once, replace
+    position: 'bottomRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
+    target: '',
+    targetFirst: true,
+    timeout: 5000,
+    rtl: false,
+    animateInside: true,
+    drag: true,
+    pauseOnHover: true,
+    resetOnHover: false,
+    progressBar: true,
+    progressBarColor: '',
+    progressBarEasing: 'linear',
+    overlay: false,
+    overlayClose: false,
+    overlayColor: 'rgba(0, 0, 0, 0.6)',
+    transitionIn: 'fadeInUp',
+    transitionOut: 'fadeOut',
+    transitionInMobile: 'fadeInUp',
+    transitionOutMobile: 'fadeOutDown',
+    buttons: {},
+    inputs: {},
+    onOpening: function () {},
+    onOpened: function () {},
+    onClosing: function () {},
+    onClosed: function () {}
+});
