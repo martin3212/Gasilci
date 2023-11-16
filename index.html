@@ -45,7 +45,7 @@
                 </div>
                 <div class="polje">
                     <div class="leva"><label for="pwd">Kraj rojstva:</label><input type="text" class="kr" ></div>
-                    <div class="desna"><label for="pwd">Spol:</label><input type="text" class="sp" ></div>  
+                    <div class="desna"><label for="pwd">Spol:</label><input name="spol" type="radio">moški<input name="spol" type="radio" >ženska</div>  
                 </div>
                 <div class="polje">
                     <div class="leva"><label for="pwd">Naslov:</label><input type="text" class="na" ></div>
@@ -96,7 +96,7 @@
                 <b>Strinjam se</b>, da PGD uporablja moje osebne podatke v evidenci članstva in za potrebe zvez, v katere je včlanjena ali jih je ustanovila.
             </div>
             <div class="spodaj">
-                <div class="s"><label><input id='check' type="checkbox" class="check" required> Z oznacitvijo tega polja se strinjas z zgoraj navedenimi pogoji.</label></div><br>
+                <div class="s"><label><input id='strinja' type="checkbox" class="strinja" required> Z oznacitvijo tega polja se strinjas z zgoraj navedenimi pogoji.</label></div><br>
                 <div class="s"><button type="button" id=reg class="reg">Prijava</button></div>
             </div>
         </div>
@@ -121,7 +121,6 @@
                 var dr = form.querySelector('.dr');
                 var d = form.querySelector('.d');
                 var kr = form.querySelector('.kr');
-                var sp = form.querySelector('.sp');
                 var na = form.querySelector('.na');
                 var si = form.querySelector('.si');
                 var pss = form.querySelector('.pss');
@@ -130,6 +129,8 @@
                 var delo = form.querySelector('.delo');
                 var ep = form.querySelector('.ep');
                 var gc = form.querySelector('.gc');
+                
+                
     
                 if (
                     !ime.value.trim() ||
@@ -141,7 +142,6 @@
                     !dr.value.trim() ||
                     !d.value.trim() ||
                     !kr.value.trim() ||
-                    !sp.value.trim() ||
                     !na.value.trim() ||
                     !si.value.trim() ||
                     !pss.value.trim() ||
@@ -150,15 +150,21 @@
                     !delo.value.trim() ||
                     !ep.value.trim() ||
                     !gc.value.trim() 
+                    
                 ) {
                     iziToast.error({
                         title: 'Napaka',
                         message: 'Prosim izpovnite vsa polja',
                     });
-                } else if (!/^[a-zA-Z0-9_]+$/.test(uporabniskoIme.value)) {
+                } else if (!/^[a-zA-Z0-9_]+$/.test(ime.value)) {
                     iziToast.error({
                         title: 'Napaka',
                         message: 'Uporabniško ime mora vsebovati samo črke, številke ali podčrtaje',
+                    });
+                } else if (!/^[0-9]{4}$/.test(pss.value)) {
+                        iziToast.error({
+                            title: 'Napaka',
+                            message: 'Vnesite veljavno poštno številko',
                     });
                 } else if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(ep.value)) {
                     iziToast.error({
@@ -184,7 +190,7 @@
                     iziToast.success({
                         title: 'Bravo',
                         message: 'Uspešno registriran!',
-                        color: '#ff7700',
+                        color: '#F4CE14',
                         titleColor: '#000000',
                     });
                     form.reset();
