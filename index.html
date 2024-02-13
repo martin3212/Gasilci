@@ -1,205 +1,375 @@
 <!DOCTYPE html>
-<html lang="sl"><head>
-    <title>Gasilci</title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="style.css" type="text/css" media="all">
-    <link rel="shorcut icon" type="image/x-icon" href="slike/logo.png">
-    <script src="javascript/iziToast.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="iziToast.min.css">
-    
-</head>
-<body>
-    <div class="main">
-        <div class="zgoraj">
-            <div class="podatki"><br><b>Gasilska zveza slovenije</b><br>Cankerjave 21<br>1101 Ljubljana<br><b>Davcna št:</b> 56854501<br><b>TRR:</b> SI42 6001 3200 0000 032<br><b>E-pošta:</b> gasilskazveza@gmail.com</div>
-            <div class="grp"><img src="slike/grp.png" style="width:100%;height:100%"></div> 
-        </div>
-        <div class="sredina">
-            <form class="prijava3">
-                <div class="polje">
-                    <div class="leva">PRISTOPNA IZJAVA</div>
-                    <div class="desna"><label for="pwd">Mat.St./ID:</label><input type="text" ></div>
-                </div>
-            </form>
-            <form  class="prijava" id="prijava" >
-                <div class="besedilo">
-                    <b>Podatki kandidata za gasilce</b>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Ime:</label><input type="text" class="Ime" ></div>
-                    <div class="desna"><label for="pwd">Mobilni telefon:</label><input type="text" class="mt" ></div> 
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Priimek:</label><input type="text" class="mek" ></div>
-                    <div class="desna"><label for="pwd">Telefon v službi:</label><input type="text" class="ts" ></div> 
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Priimek ob rojstvu:</label><input type="text" class="pr" ></div>
-                    <div class="desna"><label for="pwd">Telefon doma:</label><input type="text" class="td" ></div>  
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Datum rojstva:</label><input type="text" class="dr" ></div>
-                    <div class="desna"><label for="pwd">Državljanstvo:</label><input type="text" class="d" ></div>  
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Kraj rojstva:</label><input type="text" class="kr" ></div>
-                    <div class="desna"><label for="pwd">Spol:</label><input name="spol" type="radio">moški<input name="spol" type="radio" >ženska</div>  
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Naslov:</label><input type="text" class="na" ></div>
-                    <div class="desna"><label for="pwd">Stopna izobrazbe:</label><input type="text" class="si" ></div>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Poštna številka:</label><input type="text" class="pss" ></div>
-                    <div class="desna"><label for="pwd">Poklic:</label><input type="text" class="po" ></div>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Pošta:</label><input type="text" class="pot" ></div>
-                    <div class="desna"><label for="pwd">Delodajalec:</label><input type="text" class="delo" ></div>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">E-pošta:</label><input type="text" class="ep" ></div>
-                    <div class="desna"><label for="pwd">Gasilski čin:</label><input type="text" class="gc" ></div>
-                </div>
-            </form>
-            
-            <form class="prijava2">
-                <div class="besedilo">
-                    <b>Spodnje podatke opravijo le kandidati za gasilca</b>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">EMŠO:</label><input type="text" ></div>
-                    <div class="desna"><label for="pwd">Vrsta vozniškega dovoljenja:</label><input type="text" ></div>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Davčna št.:</label><input type="text" ></div>
-                    <div class="desna"><label for="pwd">Št. Vozniskega dovoljenja:</label><input type="text" ></div>
-                </div>
-                <div class="polje">
-                    <div class="leva"><label for="pwd">Datum zdravniskega pregleda:</label><input type="text" ></div>
-                    <div class="desna"></div>
-                </div>
-            </form>
-            <div class="pogoji">želim postati član-ica Prostovoljnega gasilskega društva Godešič, v nadaljevanju PGD in<br>
-                <h5>IZJAVLJAM:</h5>
-                <ul>
-                    <li>da prostovoljno pristopam v PGD kot član-ica,</li>
-                    <li>da se zavezujem spoštovati statut PGD in gasilskih zvez, v katere je PGD vključeno in drugih splošnih aktov PGD ,</li>
-                    <li>da se zavezujem plačevanju članarine,</li>
-                    <li>da bom pri opravljanju gasilske dejavnosti spoštoval-a vse veljavne predpise, ki urejajo to področje, se
-                        udeleževal-a izobraževanj in skrbel-a za ugled gasilske organizacije v državi in nesebično pomagal-a pri
-                        izvajanju gasilskih aktivnosti, ki jih bo organiziralo PGD,</li>
-                    <li>da sem seznanjen-a s Kodeksom etike slovenskega prostovoljnega gasilstva</li>
-                </ul>
-                <b>Strinjam se</b>, da PGD uporablja moje osebne podatke v evidenci članstva in za potrebe zvez, v katere je včlanjena ali jih je ustanovila.
-            </div>
-            <div class="spodaj">
-                <div class="s"><label><input id='strinja' type="checkbox" class="strinja" required> Z oznacitvijo tega polja se strinjas z zgoraj navedenimi pogoji.</label></div><br>
-                <div class="s"><button type="button" id=reg class="reg">Prijava</button></div>
-            </div>
-        </div>
-        </div>
-    </div>
-     
-
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var registriraj = document.getElementById('reg');
-        
-        if (registriraj) {
-            registriraj.addEventListener('click', function () {
-                var form = document.getElementById("prijava");
-                var ime = form.querySelector('.Ime');
-                var mt = form.querySelector('.mt');
-                var mek = form.querySelector('.mek');
-                var ts = form.querySelector('.ts');
-                var pr = form.querySelector('.pr');
-                var td = form.querySelector('.td');
-                var dr = form.querySelector('.dr');
-                var d = form.querySelector('.d');
-                var kr = form.querySelector('.kr');
-                var na = form.querySelector('.na');
-                var si = form.querySelector('.si');
-                var pss = form.querySelector('.pss');
-                var po = form.querySelector('.po');
-                var pot = form.querySelector('.pot');
-                var delo = form.querySelector('.delo');
-                var ep = form.querySelector('.ep');
-                var gc = form.querySelector('.gc');
-                
-                
-    
-                if (
-                    !ime.value.trim() ||
-                    !mt.value.trim() ||
-                    !mek.value.trim() ||
-                    !ts.value.trim() ||
-                    !pr.value.trim() ||
-                    !td.value.trim() ||
-                    !dr.value.trim() ||
-                    !d.value.trim() ||
-                    !kr.value.trim() ||
-                    !na.value.trim() ||
-                    !si.value.trim() ||
-                    !pss.value.trim() ||
-                    !po.value.trim() ||
-                    !pot.value.trim() ||
-                    !delo.value.trim() ||
-                    !ep.value.trim() ||
-                    !gc.value.trim() 
-                    
-                ) {
-                    iziToast.error({
-                        title: 'Napaka',
-                        message: 'Prosim izpovnite vsa polja',
-                    });
-                } else if (!/^[a-zA-Z0-9_]+$/.test(ime.value)) {
-                    iziToast.error({
-                        title: 'Napaka',
-                        message: 'Uporabniško ime mora vsebovati samo črke, številke ali podčrtaje',
-                    });
-                } else if (!/^[0-9]{4}$/.test(pss.value)) {
-                        iziToast.error({
-                            title: 'Napaka',
-                            message: 'Vnesite veljavno poštno številko',
-                    });
-                } else if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(ep.value)) {
-                    iziToast.error({
-                        title: 'Napaka',
-                        message: 'Vnesite veljaven elektronski naslov',
-                    });
-                } else if (!/^[0-9]{9}$/.test(mt.value)) {
-                        iziToast.error({
-                            title: 'Napaka',
-                            message: 'Vnesite telefonsko stevilko',
-                    });
-                } else if (!/^[0-9]{9}$/.test(ts.value)) {
-                        iziToast.error({
-                            title: 'Napaka',
-                            message: 'Vnesite sluzbeno telefonsko stevilko',
-                    });
-                } else if (!/^[0-9]{9}$/.test(td.value)) {
-                    iziToast.error({
-                        title: 'Napaka',
-                        message: 'Vnesite domaco telefonsko stevilko',
-                    });
-                } else {
-                    iziToast.success({
-                        title: 'Bravo',
-                        message: 'Uspešno registriran!',
-                        color: '#F4CE14',
-                        titleColor: '#000000',
-                    });
-                    form.reset();
-                }
-            });
-        }
-    });
-    </script>
+<html lang="sl">
+    <head >
+        <meta charset="UTF-8">
+        <title>Labirint</title>
+        <link rel="shorcut icon" type="image/x-icon" href="slike/icona.png">
+        <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    </head>
+    <body>
+		<div class="main">
+			<div class="naslov"><img src="slike/naslov.PNG" width="100%"height="100%"></div>
+        	<div class="garden">
+            	<canvas class="canvas" id="canvas" width="500" height="500"></canvas>
+        	</div>
+			<div><button class="button">PLAY</button><button class="button">STOP</button></div>
+		</div>
+    </body>
 </html>
 
 
 
+
+<script>
+var canvas=document.getElementById('canvas');
+var ctx=canvas.getContext('2d');
+ctx.scale(2,2);
+
+function labirint(){
+ctx.beginPath();
+
+//okvir #1
+		ctx.lineCap="square";
+		ctx.lineWidth=2;
+		ctx.moveTo(0,0);
+		ctx.lineTo(114,0);
+		ctx.moveTo(130,0);
+		ctx.lineTo(242,0);
+		ctx.moveTo(66,18);
+		ctx.lineTo(114,18);
+		ctx.moveTo(162,18);
+		ctx.lineTo(226,18);
+		ctx.moveTo(0,34);
+		ctx.lineTo(18,34);
+		ctx.moveTo(34,34);
+		ctx.lineTo(50,34);
+		ctx.moveTo(82,34);
+		ctx.lineTo(98,34);
+		ctx.moveTo(130,34);
+		ctx.lineTo(162,34);
+		ctx.moveTo(178,34);
+		ctx.lineTo(210,34);
+		ctx.moveTo(18,50);
+		ctx.lineTo(50,50);
+		ctx.moveTo(66,50);
+		ctx.lineTo(82,50);
+		ctx.moveTo(98,50);
+		ctx.lineTo(130,50);
+		ctx.moveTo(146,50);
+		ctx.lineTo(162,50);
+		ctx.moveTo(194,50);
+		ctx.lineTo(226,50);
+		ctx.moveTo(82,66);
+		ctx.lineTo(146,66);
+		ctx.moveTo(162,66);
+		ctx.lineTo(194,66);
+		ctx.moveTo(226,66);
+		ctx.lineTo(242,66);
+		ctx.moveTo(18,82);
+		ctx.lineTo(66,82);
+		ctx.moveTo(98,82);
+		ctx.lineTo(162,82);
+		ctx.moveTo(210,82);
+		ctx.lineTo(226,82);
+		ctx.moveTo(2,98);
+		ctx.lineTo(50,98);
+		ctx.moveTo(66,98);
+		ctx.lineTo(114,98);
+		ctx.moveTo(130,98);
+		ctx.lineTo(178,98);
+		ctx.moveTo(194,98);
+		ctx.lineTo(210,98);
+		ctx.moveTo(34,114);
+		ctx.lineTo(66,114);
+		ctx.moveTo(114,114);
+		ctx.lineTo(130,114);
+		ctx.moveTo(178,114);
+		ctx.lineTo(194,114);
+		ctx.moveTo(226,114);
+		ctx.lineTo(242,114);
+		ctx.moveTo(18,130);
+		ctx.lineTo(50,130);
+		ctx.moveTo(114,130);
+		ctx.lineTo(162,130);
+		ctx.moveTo(194,130);
+		ctx.lineTo(226,130);
+		ctx.moveTo(0,146);
+		ctx.lineTo(34,146);
+		ctx.moveTo(50,146);
+		ctx.lineTo(66,146);
+		ctx.moveTo(98,146);
+		ctx.lineTo(114,146);
+		ctx.moveTo(162,146);
+		ctx.lineTo(210,146);
+		ctx.moveTo(226,146);
+		ctx.lineTo(242,146);
+		ctx.moveTo(34,162);
+		ctx.lineTo(50,162);
+		ctx.moveTo(66,162);
+		ctx.lineTo(82,162);
+		ctx.moveTo(130,162);
+		ctx.lineTo(146,162);
+		ctx.moveTo(178,162);
+		ctx.lineTo(226,162);
+		ctx.moveTo(50,178);
+		ctx.lineTo(66,178);
+		ctx.moveTo(82,178);
+		ctx.lineTo(98,178);
+		ctx.moveTo(114,178);
+		ctx.lineTo(130,178);
+		ctx.moveTo(162,178);
+		ctx.lineTo(210,178);
+		ctx.moveTo(2,194);
+		ctx.lineTo(34,194);
+		ctx.moveTo(66,194);
+		ctx.lineTo(114,194);
+		ctx.moveTo(130,194);
+		ctx.lineTo(146,194);
+		ctx.moveTo(178,194);
+		ctx.lineTo(226,194);
+		ctx.moveTo(18,210);
+		ctx.lineTo(82,210);
+		ctx.moveTo(114,210);
+		ctx.lineTo(130,210);
+		ctx.moveTo(162,210);
+		ctx.lineTo(178,210);
+		ctx.moveTo(18,226);
+		ctx.lineTo(66,226);
+		ctx.moveTo(114,226);
+		ctx.lineTo(130,226);
+		ctx.moveTo(162,226);
+		ctx.lineTo(178,226);
+		ctx.moveTo(210,226);
+		ctx.lineTo(242,226);
+		ctx.moveTo(0,242);
+		ctx.lineTo(114,242);
+		ctx.moveTo(130,242);
+		ctx.lineTo(242,242);
+		ctx.moveTo(0,0);
+		ctx.lineTo(0,242);
+		ctx.moveTo(18,18);
+		ctx.lineTo(18,34);
+		ctx.moveTo(18,50);
+		ctx.lineTo(18,82);
+		ctx.moveTo(18,98);
+		ctx.lineTo(18,130);
+		ctx.moveTo(18,162);
+		ctx.lineTo(18,194);
+		ctx.moveTo(34,18);
+		ctx.lineTo(34,34);
+		ctx.moveTo(34,50);
+		ctx.lineTo(34,66);
+		ctx.moveTo(34,162);
+		ctx.lineTo(34,178);
+		ctx.moveTo(50,0);
+		ctx.lineTo(50,34);
+		ctx.moveTo(50,66);
+		ctx.lineTo(50,82);
+		ctx.moveTo(50,130);
+		ctx.lineTo(50,146);
+		ctx.moveTo(50,162);
+		ctx.lineTo(50,210);
+		ctx.moveTo(66,34);
+		ctx.lineTo(66,50);
+		ctx.moveTo(66,66);
+		ctx.lineTo(66,114);
+		ctx.moveTo(66,130);
+		ctx.lineTo(66,162);
+		ctx.moveTo(66,178);
+		ctx.lineTo(66,194);
+		ctx.moveTo(66,226);
+		ctx.lineTo(66,242);
+		ctx.moveTo(82,50);
+		ctx.lineTo(82,82);
+		ctx.moveTo(82,114);
+		ctx.lineTo(82,162);
+		ctx.moveTo(82,210);
+		ctx.lineTo(82,226);
+		ctx.moveTo(98,34);
+		ctx.lineTo(98,50);
+		ctx.moveTo(98,98);
+		ctx.lineTo(98,178);
+		ctx.moveTo(98,194);
+		ctx.lineTo(98,242);
+		ctx.moveTo(114,0);
+		ctx.lineTo(114,50);
+		ctx.moveTo(114,82);
+		ctx.lineTo(114,98);
+		ctx.moveTo(114,114);
+		ctx.lineTo(114,130);
+		ctx.moveTo(114,146);
+		ctx.lineTo(114,194);
+		ctx.moveTo(114,210);
+		ctx.lineTo(114,226);
+		ctx.moveTo(130,18);
+		ctx.lineTo(130,34);
+		ctx.moveTo(130,98);
+		ctx.lineTo(130,114);
+		ctx.moveTo(130,130);
+		ctx.lineTo(130,162);
+		ctx.moveTo(130,194);
+		ctx.lineTo(130,210);
+		ctx.moveTo(130,226);
+		ctx.lineTo(130,242);
+		ctx.moveTo(146,0);
+		ctx.lineTo(146,18);
+		ctx.moveTo(146,50);
+		ctx.lineTo(146,82);
+		ctx.moveTo(146,114);
+		ctx.lineTo(146,130);
+		ctx.moveTo(146,146);
+		ctx.lineTo(146,226);
+		ctx.moveTo(162,18);
+		ctx.lineTo(162,50);
+		ctx.moveTo(162,98);
+		ctx.lineTo(162,114);
+		ctx.moveTo(162,130);
+		ctx.lineTo(162,210);
+		ctx.moveTo(178,34);
+		ctx.lineTo(178,98);
+		ctx.moveTo(178,114);
+		ctx.lineTo(178,146);
+		ctx.moveTo(178,210);
+		ctx.lineTo(178,226);
+		ctx.moveTo(194,66);
+		ctx.lineTo(194,98);
+		ctx.moveTo(194,194);
+		ctx.lineTo(194,242);
+		ctx.moveTo(210,50);
+		ctx.lineTo(210,82);
+		ctx.moveTo(210,98);
+		ctx.lineTo(210,130);
+		ctx.moveTo(210,210);
+		ctx.lineTo(210,226);
+		ctx.moveTo(226,18);
+		ctx.lineTo(226,50);
+		ctx.moveTo(226,82);
+		ctx.lineTo(226,98);
+		ctx.moveTo(226,162);
+		ctx.lineTo(226,210);
+		ctx.moveTo(242,0);
+		ctx.lineTo(242,242);
+		ctx.closePath();			
+			
+		ctx.strokeStyle='rgb(97, 134, 41)';
+		ctx.stroke();
+}
+var y = 0;
+	var x = 120;
+	var nar = 1;
+	var dx = 2;
+	var dy = 2;
+	var gardner = new Image();
+	gardner.src="slike/figura.webp";
+    
+	function drawIt() {
+		ctx.fillStyle = "white";
+		if(nar==1){
+	
+		ctx.fillRect(x,y,1,1);//koordinati + širina in višina
+		
+		labirint();
+
+	}else if(nar==2){
+		ctx.clearRect(x-7,y-7,14,14);
+		ctx.drawImage(gardner, x-5, y-5, 10, 10);    
+		labirint();
+	}
+	if(x==120 && y>=0 && y<=8)
+	y+=dy;
+	if(y==8 && x>=120 && x<=136)
+	x+=dx;
+	if(x==136 && y>=8 && y<=24)
+	y+=dy;
+	if(y==24 && x>=136 && x<=152)
+	x+=dx;
+	if(x==152 && y<=24 && y>=8)
+	y-=dy;
+	if(y==8 && x>=152 && x<=232)
+	x+=dx;
+	if(x==232 && y>=8 && y<=55)
+	y+=dy;
+	if(y==56 && x<=232 && x>=220)
+	x-=dx;
+	if(x==218 && y>=56 && y<=73)
+	y+=dy;
+	if(y==72 && x>=218 && x<=231)
+	x+=dx;
+	if(x==232 && y>=71 && y<=103)
+	y+=dy;
+	if(y==104 && x<=232 && x>=217)
+	x-=dx;
+	if(x==216 && y<=104 && y>=89)
+	y-=dy;
+	if(y==88 && x<=216 && x>=200)
+	x-=dx;
+	if(x==200 && y<=88 && y>=57)
+	y-=dy;
+	if(y==56 && x<=200 && x>=185)
+	x-=dx;
+	if(x==184 && y<=56 && y>=41)
+	y-=dy;
+	if(y==40 && x>=184 && x<=215)
+	x+=dx;
+	if(x==216 && y<=40 && y>=24)
+	y-=dy;
+	if(y==24 && x<=216 && x>=168)
+	x-=dx;
+	if(x==168 && y>=24 && y<=56)
+	y+=dy;
+	if(y==56 && x<=168 && x>=152)
+	x-=dx;
+	if(x==152 && y>=56 && y<=72)
+	y+=dy;
+	if(y==72 && x>=152 && x<=168)
+	x+=dx;
+	if(x==168 && y>=72 && y<=88)
+	y+=dy;
+	if(y==88 && x<=168 && x>=120)
+	x-=dx;
+	if(x==120 && y>=88 && y<=104)
+	y+=dy;
+	if(y==104 && x<=120 && x>=104)
+	x-=dx;
+	if(x==104 && y>=104 && y<=136)
+	y+=dy;
+	if(y==136 && x>=104 && x<=120)
+	x+=dx;
+	if(x==120 && y>=136 && y<=168)
+	y+=dy;
+	if(y==168 && x>=120 && x<=136)
+	x+=dx;
+	if(x==136 && y>=168 && y<=184)
+	y+=dy;
+	if(y==184 && x<=136 && x>=120)
+	x-=dx;
+	if(x==120 && y>=184 && y<=200)
+	y+=dy;
+	if(y==200 && x<=120 && x>=104)
+	x-=dx;
+	if(x==104 && y>=200 && y<=232)
+	y+=dy;
+	if(y==232 && x>=104 && x<=120)
+	x+=dx;
+	if(x==120 && y>=232 && y<=238)
+	y+=dy;
+	if(x==120&&y==238){
+			x=120;
+			y=0;
+	if(nar==1){
+		nar++;
+	}
+	else{
+		ctx.clearRect(x,y,4,4);    
+		nar++;
+			setTimeout(function(){
+			ctx.clearRect(100,200,1000,1000);    
+			y = 0;
+			x = 120;
+			nar = 1;
+			}, 4000);
+	}
+}
+}
+setInterval(drawIt, 25); 
+</script>
